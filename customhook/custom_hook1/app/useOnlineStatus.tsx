@@ -9,7 +9,7 @@ function useOnlineStatus() {
         const unsubscribe = 
        
         NetInfo.addEventListener(state => {
-            console.log('NetInfo state:', state);
+            //console.log('NetInfo state:', state);
             setIsOnline(state.isConnected ?? true)});
         //attaching a event lister and return a function called unsubscribe 
         //,whose work is to clear the listener event when component unmount
