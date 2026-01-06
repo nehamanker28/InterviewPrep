@@ -4,9 +4,7 @@ var minSubArrayLen = function(target, nums) {
     let minLen = Infinity;
         for(let right = 0;right < nums.length ; right ++){
         sum = sum + nums[right]
-      
         while(sum >= target){
-            
             minLen = Math.min(minLen,right-left+1)
             sum = sum - nums[left];
             left++ ;
